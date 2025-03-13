@@ -97,6 +97,6 @@ STATIC_URL = '/static/'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.getenv('DATABASE', 'sqlite:///db.sqlite3')
+        os.getenv('DATABASE', 'sqlite:///db_backup.sqlite3')
     ),
 }
