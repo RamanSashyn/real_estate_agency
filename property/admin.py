@@ -11,7 +11,7 @@ class OwnerInline(admin.TabularInline):
     verbose_name_plural = 'Собственники'
 
     def owner(self, obj):
-        return obj.owner.full_name  # Показываем полное имя владельца
+        return obj.owner.full_name
 
     owner.short_description = 'Имя владельца'
 
